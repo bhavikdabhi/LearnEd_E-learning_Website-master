@@ -7,7 +7,7 @@
 	<title>EdTech</title>
 	<meta name="desciption" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script>
@@ -230,15 +230,15 @@
 			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
 				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
 				<center>
-				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				<input type="text" name="inputName" id="inputName" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="inputLName" id="inputLName" style="width: 175px" required="required"><br>
 				</center>
 				<label>Email <span class="imp">*</span></label><br>
-				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<input type="email" name="inputEmail" id="inputEmail" style="width: 100%" required="required"><br>
 				<label>Message <span class="imp">*</span></label><br>
-				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<input type="text" name="inputMessage" id="inputMessage" style="width: 100%" required="required"><br>
 				<label>Additional Details</label><br>
 				<textarea name="addtional"></textarea><br>
-				<button type="submit" id="csubmit">Send Message</button>
+				<button type="button" id="csubmit" onclick="send()">Send Message</button>
 			</form>
 			</div>
 		</div>
@@ -257,20 +257,17 @@
 		<div class="feed">
 			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
 				<label>Your Name</label><br>
-				<input type="text" name="" class="fname" required="required"><br>
+				<input type="text" name="" id="inputName" class="fname" required="required"><br>
 				<label>Email</label><br>
-				<input type="email" name="mail" required="required"><br>
+				<input type="email" name="mail" id="inputEmail" required="required"><br>
 				<label>Additional Details</label><br>
 				<textarea name="addtional"></textarea><br>
-				<button type="submit" id="csubmit">Send Message</button>
+				<button type="button" value="submit" data-target="#exampleModal" class="btn" onclick="send()">Send Message</button>
 			</form>
 		</div>
 	</div>
 
-<!-- Sliding Information -->
-	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
-
-<!-- FOOTER -->
+<!-- FOOTER 
 	<footer>
 		<div class="footer-container">
 			<div class="left-col">
@@ -297,7 +294,11 @@
 				</form>
 			</div>
 		</div>
-	</footer>
+	</footer>-->
 
+    <footer>
+        <p>Copyright © 2024 by <label>Web Wizards</label> || All Right Reservd.</p>
+    </footer>
+   
 </body>
 </html>
