@@ -8,11 +8,20 @@
 	padding: 0;
 }
 
+:root{
+	--bg-color:white;
+	--bg-blue:rgb(0, 191, 251);       
+	--bg-darkblue:rgb(4, 135, 175);
+	--bg-mix:linear-gradient(0deg, rgb(0, 191, 251) 0%,  rgb(4, 135, 175) 100%);
+	/* #var(--bg-blue);;                                                 */
+ }
+ 
+
 html {
 	scroll-behavior: smooth;
 }
 body {
-	background: #FFF;
+	background: var(--bg-color);
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -54,12 +63,13 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	background: var(--bg-blue);
 }
 .active {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	/* background: #var(--bg-blue);; */
+	background: var(--bg-blue);
 }
 .srch {
 	padding: 2px 10px;
@@ -84,12 +94,12 @@ nav ul li a:hover {
 .get-started {
 	margin-left: 50px;
 	padding: 5px 20px;
-	border: 2px solid #DF2771;
+	border: 2px solid var(--bg-blue);
 	border-radius: 20px;
 	text-decoration: none;
 	
 	transition: .5s;
-	background-color: #DF2771;
+	background-color:var(--bg-blue);
 	color: #fff;
 }
 .get-started:hover {
@@ -164,7 +174,8 @@ a, button {
 .side-menu {
 	width: 100%;
 	height: 100%;
-	background: rgba(182, 33, 90, 0.993);
+	background: var(--bg-blue);
+	/* background: rgba(182, 33, 90, 0.993); */
 	position: absolute;
 	top: 0;
 	transition: .8s;
@@ -189,7 +200,7 @@ a, button {
 }
 .side-menu ul li:hover a{
 	background: #fff;
-	color: #DF2771;
+	color:var(--bg-blue)
 }
 .side-menu ul li a{
 	color: #FFF;
@@ -282,7 +293,7 @@ a, button {
 }
 .smbox .data {
 	font-size: 80px;
-	color: #FA6146;	
+	color: #028cb6;	
 }
 .smbox .det {
 	font-size: 20px;
@@ -364,14 +375,14 @@ a, button {
 	width: 250px;
 	padding: 28px;
 	border-radius: 10px;
-	border: 1px solid #FA4B37;
+	border: 1px solid #028cb6;
 	font-size: 15px;
 	color: #272529;
 	font-family: cursive;
 	text-decoration: none;
 }
 .cbox .det a:hover {
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, var(--bg-blue));
 	color: white;
 }
 .cbox .det a:hover img{
@@ -402,18 +413,19 @@ a, button {
 					0 0 10px rgba(0,0,0,0.3);
 }
 .card:nth-child(1){
-	border-top: 5px solid green;
+	border-top: 5px solid var(--bg-darkblue);
 }
 .card:nth-child(2){
 	border-top: 5px solid blue;
 }
 .card:nth-child(1):hover {
-	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
-				1px 1px 30px rgba(0,255,0,0.5);
+	box-shadow: inset 0px 0px 10px var(--bg-blue),
+				1px 1px 10px var(--bg-darkblue);
 }
 .card:nth-child(2):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
 				1px 1px 30px rgba(0,0,255,0.5);
+			
 }
 .totalcard .card img {
 	width: 100px;
@@ -424,8 +436,8 @@ a, button {
 	transition-duration: .8s;
 }
 .totalcard .card img:hover {
-	transform: scale(3.5);
-	border-radius: 0;
+	transform: scale(1.3);
+	border-radius: 10px;
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 #detail p{
@@ -455,7 +467,7 @@ a, button {
 	align-self: center;
 }
 .btn-roshan:hover {
-	background: rgba(0,255,0,0.7);
+	background: var(--bg-mix);
 	color: #fff;
 }
 .btn-roshan2:hover {
@@ -513,7 +525,7 @@ a, button {
 
 /*Contact Us Section*/
 .csec {
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, var(--bg-blue));
 	background-attachment: fixed; 
 	position: absolute;
 	width: 100%;
@@ -578,7 +590,7 @@ form textarea {
 }
 #csubmit {
 	margin-top: 20px; 
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, var(--bg-blue));
 	border-radius: 5px;
 	border-style: none;
 	outline: none;
@@ -743,7 +755,7 @@ form textarea {
 }
 .feed #csubmit {
 	margin-top: 25px; 
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, var(--bg-blue));
 	border-radius: 5px;
 	border-style: none;
 	outline: none;
@@ -796,7 +808,7 @@ footer .right-col h1{
 footer .border{
 	width: 100px;
 	height: 4px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, #var(--bg-blue););
 	margin: 2px;
 }
 footer .newsletter-form {
@@ -826,7 +838,7 @@ footer .btn {
 	padding: 18px 40px;
 	font-size: 16px;
 	color: #f1f1f1;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, #var(--bg-blue););
 	border: none;
 	font-weight: 700;
 	outline: none;
