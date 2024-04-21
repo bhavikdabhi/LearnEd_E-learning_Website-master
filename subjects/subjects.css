@@ -409,7 +409,7 @@ body {
 	font-size: 20px;
 }
 
-/*Footer*/
+/*Footer
 
 footer {
 	color: #E5E8EF;
@@ -498,7 +498,17 @@ footer .btn {
 footer .btn:hover {
 	opacity: .7;
 }
+*/
+footer{
+    text-align: center;
+	color: #E5E8EF;
+	background: #000D;
+	padding: 2rem 0;
 
+}
+footer label{
+    color: var(--socialMedia-color);
+}
 
 /*For Responsive Website*/
 @media screen and (max-width: 960px) {
